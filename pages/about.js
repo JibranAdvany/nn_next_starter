@@ -1,20 +1,16 @@
-import Link from "next/link";
-import React from "react";
 import Head from "next/head";
+import React from "react";
 
-import styles from "./../styles/Home.module.css";
-
-const Home = () => {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | Home</title>
+        <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
-        <h1 className={styles.title}>Homepage</h1>
-
-        <p className={styles.text}>
+        <h1>About</h1>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -24,7 +20,7 @@ const Home = () => {
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
 
-        <p className={styles.text}>
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -33,13 +29,9 @@ const Home = () => {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-
-        <Link href="/ninjas" className={styles.btn}>
-          See Ninja Listing
-        </Link>
       </div>
     </>
   );
 };
 
-export default Home;
+export default About;
